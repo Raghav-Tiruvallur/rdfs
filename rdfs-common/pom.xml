@@ -5,10 +5,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.rdfs</groupId>
-	<artifactId>rdfs</artifactId>
+	<artifactId>rdfs-common</artifactId>
 	<version>1.0-SNAPSHOT</version>
 
-	<name>rdfs</name>
+	<name>rdfs-common</name>
 	<!-- FIXME change it to the project's website -->
 	<url>http://www.example.com</url>
 
@@ -29,11 +29,6 @@
 			<groupId>info.picocli</groupId>
 			<artifactId>picocli</artifactId>
 			<version>4.6.3</version>
-		</dependency>
-		<dependency>
-			<groupId>com.rdfs</groupId>
-			<artifactId>rdfs-common</artifactId>
-			<version>1.0-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 
@@ -90,21 +85,6 @@
 				<plugin>
 					<artifactId>maven-project-info-reports-plugin</artifactId>
 					<version>3.0.0</version>
-				</plugin>
-				<plugin>
-					<!-- Build an executable JAR -->
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-jar-plugin</artifactId>
-					<version>3.1.0</version>
-					<configuration>
-						<archive>
-							<manifest>
-								<addClasspath>true</addClasspath>
-								<classpathPrefix>lib/</classpathPrefix>
-								<mainClass>com.rdfs.Rdfs</mainClass>
-							</manifest>
-						</archive>
-					</configuration>
 				</plugin>
 			</plugins>
 
